@@ -1,5 +1,5 @@
 # Network-Scanner
-A custom python script to detect devices on a network and return their IP addresses
+A custom python script to detect devices on a network and return their IP addresses mac addresses and host name. It also pings the returned ip addresses to check if they are reachable. It returns a list of reachable IP's along with their mac addresses and host names. Also does same to the unreachable IP addresses. This script is good for networkl administrators to help them identify the variopus devices connected to a single network.
 
 
 
@@ -14,6 +14,12 @@ This script uses the scapy library which relies on layer 2 ARP packets to discov
 
 ## Install the scapy library
 pip install scapy
+
+##Install requests
+pip install requests
+
+## Install netaddr libary
+pip install netaddr
 
 ## run the script after installing
 python scan.py
